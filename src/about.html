@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+ <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+        
+            <div class="flex items-center gap-2">
+                <a href="#">
+                    <span class="text-2xl font-bold tracking-tight text-emerald-500">Cultivate</span>
+                </a>
+            </div>
+
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#" class="text-gray-600 hover:text-emerald-600 font-medium hover:border-b-2 border-emerald-500 py-1">Home</a>
+                <a href="./about.html" class="text-gray-600 hover:text-emerald-600 font-medium hover:border-b-2 border-emerald-500 py-1">About Us</a>
+                <a href="#courses" class="text-gray-600 hover:text-emerald-600 font-medium hover:border-b-2 border-emerald-500 py-1">Course</a>
+                <a href="#tutors" class="text-gray-600 hover:text-emerald-600 font-medium hover:border-b-2 border-emerald-500 py-1">Instructors</a>
+            </div>
+
+            <div class="hidden lg:flex items-center space-x-4">
+                <button class="px-5 py-2.5 text-emerald-600 font-semibold border border-emerald-100 rounded-lg hover:bg-emerald-50 transition cursor-pointer">Login</button>
+                <button class="px-5 py-2.5 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-600 shadow-md shadow-emerald-200 transition cursor-pointer">Sign Up</button>
+            </div>
+
+            <div class="lg:hidden flex items-center">
+                <label onclick="toggleMenu()" for="mobile-menu-toggle" class="cursor-pointer p-2 text-gray-600">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="mobileMenu" class="hidden peer-checked:block bg-white border-t border-gray-100 shadow-xl">
+        <div class="px-4 pt-2 pb-6 space-y-1">
+        <a href="#" class="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-slate-50">Home</a>
+        <a href="#about" class="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-slate-50">About Us</a>
+        <a href="#courses" class="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-slate-50">Course</a>
+        <a href="#tutors" class="block px-3 py-4 text-base font-medium text-gray-600 hover:bg-slate-50">Instructors</a>
+        <div class="pt-4 flex flex-col gap-3">
+            <button class="w-full py-3 text-emerald-600 font-semibold border border-emerald-200 rounded-lg cursor-pointer">Login</button>
+            <button class="w-full py-3 bg-emerald-500 text-white font-semibold rounded-lg cursor-pointer">Sign Up</button>
+        </div>
+        </div>
+    </div>
+</nav>
+
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">About Us</h1>
+      <p class="text-xl text-emerald-600 font-medium">Empowering students since 2024</p>
+    </div>
+
+    <div class="space-y-8 text-lg leading-relaxed text-gray-700">
+      <p>
+        Welcome to <strong>Cultivate</strong>. We are a team of dedicated educators committed to making high-quality tutoring accessible to everyone. Our platform connects students with the world's best instructors in a virtual environment designed for growth.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8 py-8">
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-emerald-500">
+          <h2 class="text-xl font-bold mb-2 text-gray-900">Our Mission</h2>
+          <p>To provide personalized coaching that builds confidence, masters complex subjects, and delivers measurable results for every student.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-emerald-500">
+          <h2 class="text-xl font-bold mb-2 text-gray-900">Our Vision</h2>
+          <p>To create a global community where knowledge is shared freely and every learner has the tools to reach their full potential.</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-900 pt-4">Why Choose Us?</h2>
+      <ul class="list-disc pl-6 space-y-3">
+        <li><strong>Expert Tutors:</strong> Hand-picked instructors with proven track records.</li>
+        <li><strong>Flexible Learning:</strong> Study from anywhere, at any time that suits you.</li>
+        <li><strong>Interactive Tools:</strong> Modern technology to make online learning feel personal.</li>
+        <li><strong>Affordable Rates:</strong> Quality education shouldn't break the bank.</li>
+      </ul>
+    </div>
+
+    
+
+  </main>
+
+   <footer class="bg-white border-t border-slate-100 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                
+                <div class="text-center md:text-left">
+                    <div class="text-2xl font-bold text-emerald-500 mb-2">Cultivate</div>
+                    <p class="text-slate-500 text-sm">Empowering students through personalized coaching.</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-sm font-medium text-slate-600">
+                    <a href="#" class="hover:text-emerald-500 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-emerald-500 transition">Terms of Service</a>
+                    <a href="#" class="hover:text-emerald-500 transition">Contact Us</a>
+                </div>
+
+                <div class="text-slate-400 text-sm">
+                    &copy; 2024 Cultivate. All rights reserved.
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
